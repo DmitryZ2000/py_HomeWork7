@@ -1,6 +1,4 @@
 # Задание в группах: Создать телефонный справочник с возможностью импорта и экспорта данных в нескольких форматах.
-
-# from random import randint
 from os import system
 
 def db_init(my_phonebook, my_address):
