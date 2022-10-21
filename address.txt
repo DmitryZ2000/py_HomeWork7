@@ -1,0 +1,4 @@
+City;Street;House
+Moscow;Big Val;5
+Volgograd;Angarskaya;12
+Tula;Krasnaya;34
