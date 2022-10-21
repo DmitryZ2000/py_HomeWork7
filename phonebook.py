@@ -35,8 +35,6 @@ def write_file(my_dic, filename = 'phonebook.txt'):
     with open(filename, 'a') as data:
         for man in my_dic:
             my_dic[man]
-            # print(';'.join(my_dic[man]))
-            # data.write(';'.join(my_dic[man]) +'\n')
             data.write(';'.join(my_dic[man]))
             data.write('\n')
     return print('Запись выполнена')
@@ -45,8 +43,7 @@ def read_file(my_dic, filename = 'phonebook.txt'):
     with open(filename, 'r') as data:
         count = 0
         my_dic = {}
-        for line in data:
-            
+        for line in data:            
             my_dic[count] = line[:-2].split(';') #Срезом убираем символ перевода строки
             count +=1
     return my_dic
